@@ -1062,43 +1062,51 @@
           <div
             class="col-md-5 mx-4 p-5 justify-content-center"
             style="border: 1px solid rgb(225, 225, 225)">
-            <form>
+            <form id="form">
               <div class="row mb-3">
-                <div class="col-md-6">
+                <div class="col-md-6 input-control">
                   <input
                     type="text"
                     class="form-control"
                     id="firstName"
                     placeholder="First Name"
-                    required />
+                     />
+                    <!-- error -->
+                    <div class="error text-danger" style="font-size: smaller;"></div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 input-control">
                   <input
                     type="text"
                     class="form-control"
                     id="lastName"
                     placeholder="Last Name"
-                    required />
+                     />
+                    <!-- error -->
+                    <div class="error text-danger" style="font-size: smaller;"></div>
                 </div>
               </div>
-              <div class="mb-3">
+              <div class="mb-3 input-control">
                 <input
                   type="text"
                   class="form-control"
                   id="subject"
                   placeholder="Subject"
-                  required />
+                   />
+                  <!-- error -->
+                  <div class="error text-danger" style="font-size: smaller;"></div>
               </div>
-              <div class="mb-3">
+              <div class="mb-3 input-control">
                 <textarea
                   class="form-control"
                   id="message"
                   rows="4"
                   placeholder="Message"
-                  required></textarea>
+                  ></textarea>
+                  <!-- error -->
+                  <div class="error text-danger" style="font-size: smaller;"></div>
               </div>
               <button
-                type="button"
+                type="submit"
                 class="btn btn-dark col-md-4 rounded-pill pricing-business-button">
                 Send Message
               </button>
